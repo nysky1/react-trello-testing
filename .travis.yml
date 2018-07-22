@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: bauhMdUM3vMbHU1VtqUPMNZ9BJaKjrmwDu+B+kobtya3qWblLTcn4Sipoy7pDwXDAOqPyR1sRmcZwCUMAUGT5wf6lfsWa9Ci/CxDalUYChJ05gdxjfnUqF0JbqMDO4JlEE0hUtStdG3zpvwD5u9yxdbWW2fASstjWVmPyMzRJld+oOzFZrlpFEhqXiAJTnodxHmXogsX4zc5171kVM3AolJHFy8lF05LqK3mur1iOB4rqzcwui2QH4L5nOXRQ8KK/BGk/A81shhJibssiIGSlybx5yD56AJPtQTJ1KBg8Lq4p+AWQXAtp4nlxOOb6TGCB5VigbZyzn7IYGaISmNE+X5mTUaob5HMGpYEVO/EujTpXDF3k+kuQW6xpvPfnYJnGO9jEu45TB96kLJqra/7d1npW0CcWSCPKYlQf3GJN+uGTysM+tX6SpLh3q4FVucB2Kyyp+5xwhcyZ6wUijpQGMNkK3UmlBQwt43LcTzG2PhwUDYja6rq5Iefd1/G6gIaIAZrftZpizQ00oSghNA3NKmcBwSYKY7CgT0TvMM/PEAL5ZGRMVnNNGKT/+7O+HBQ6HC2/QiZ/HmUH6A3Rrif/ERi9e1Bi5jT9ZYJu7QjCL8J5a2DPKY8Emq2QZkslDfF1goXhX1Du8aFniQSz4Dsm/e7+ecPye+61bCAXtcyQ00=
+  app: young-reaches-57571
+  on:
+    repo: nysky1/react-trello-testing
