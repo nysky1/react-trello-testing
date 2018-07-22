@@ -25,7 +25,7 @@ describe('<AddForm />', () => {
         wrapper.simulate('click');
         expect(wrapper.state('editing')).toEqual(true);
     });
-
+ 
     it('Should fire the onAdd callback when the form is submitted', () => {
         const callback = jest.fn();
         const wrapper = mount(<AddForm onAdd={callback} />);
